@@ -239,7 +239,7 @@ This div has a red border, padding, and background color.
 
 <footer>
 
-<button onclick="window.location.href='LESSON 3a - IA.html'">Go Back to Previous Lesson</button>
+<button onclick="window.location.href='LESSON 3A - IA.html'">Go Back to Previous Lesson</button>
 <button onclick="confirmBack()">Go Back to Main Page</button>
 <button onclick="window.location.href='LESSON 1 - IB.html'">Proceed to Next Quarter</button>
 
@@ -248,3 +248,4 @@ This div has a red border, padding, and background color.
 </body>
 
 </html>
+
