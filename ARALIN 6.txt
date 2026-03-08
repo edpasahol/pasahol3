@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="UTF-8">
+<title>AP 9: Kalakalang Panlabas</title>
+
+<style>
+body {
+    font-family: MV Boli;
+    background-color: #D6EAF8;
+    color: #1B4F72;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #85C1E9;
+    color: #1B4F72;
+    text-align: center;
+    padding: 20px;
+}
+section {
+    background-color: #EBF5FB;
+    margin: 20px auto;
+    padding: 18px;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+h2 { color: #21618C; margin-top: 0; }
+p { text-align: justify; line-height: 1.5; }
+ul { margin-left: 25px; }
+.highlight { color: #154360; font-weight: bold; }
+.media-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+img {
+    width: 240px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+}
+button {
+    background-color: #5DADE2;
+    color: #1B4F72;
+    border: none;
+    padding: 12px 18px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+button:hover { background-color: #3498DB; }
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+.note { background: #F0F8FF; padding: 10px; border-left: 4px solid #5DADE2; border-radius: 6px; }
+</style>
+
+<script>
+
+function pageLoaded(){
+    alert("Maligayang pagdating sa AP 9 Notes: Kalakalang Panlabas!");
+}
+
+function demoAlert(){
+    alert("Tandaan: Walang bansa ang kayang matugunan ang lahat ng pangangailangan nito nang mag-isa.");
+}
+
+function confirmBackToMain(){
+    let confirmReturn = confirm("Sigurado ka bang gusto mong bumalik sa Main Page?");
+    if(confirmReturn){
+        window.location.href='homepage.html';
+    }
+}
+
+</script>
+</head>
+
+<body onload="pageLoaded()">
+
+<header>
+<h1>AP 9: Kalakalang Panlabas</h1>
+<h3>Interactive Notes</h3>
+</header>
+
+<section>
+<h2>Ano ang Kalakalang Panlabas?</h2>
+
+<p>
+Ang <span class="highlight">kalakalang panlabas</span> ay ang palitan ng produkto at serbisyo sa pagitan ng mga bansa. 
+Nangyayari ito dahil walang bansa ang kayang tugunan ang lahat ng pangangailangan nito nang walang tulong mula sa ibang bansa.
+</p>
+
+<ul>
+<li><b>Bilateral</b> – kalakalan ng dalawang bansa (hal. U.S. at Pilipinas)</li>
+<li><b>Bloc</b> – kalakalan sa pagitan ng organisasyon at isang bansa</li>
+<li><b>Export</b> – pagluluwas ng produkto</li>
+<li><b>Import</b> – pag-aangkat ng produkto</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Dahilan ng Kalakalang Panlabas</h2>
+
+<ul>
+<li>Pagkakaiba ng teknolohiya</li>
+<li>Pagkakaiba sa likas na yaman</li>
+<li>Pagkakaiba sa panlasa ng mamimili</li>
+<li>Pagkakaiba sa halaga ng produksyon</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Patakarang Umaapekto sa Kalakalan</h2>
+
+<ul>
+<li><b>Taripa</b> – buwis sa mga inaangkat na produkto</li>
+<li><b>Kota / Quota</b> – limitasyon sa dami ng maaaring ipasok na produkto</li>
+<li><b>Subsidy</b> – tulong ng gobyerno upang bumaba ang gastos sa produksyon ng lokal na produkto</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Batayan ng Kalakalang Panlabas</h2>
+
+<ul>
+
+<li>
+<b>Absolute Advantage</b> – kakayahang makagawa ng mas maraming produkto gamit ang mas kaunting resources kumpara sa ibang bansa.
+</li>
+
+<li>
+<b>Comparative Advantage</b> – espesyalisasyon ng bansa sa paggawa ng produkto na kaya nitong gawin nang mas mahusay.
+</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Balance of Trade</h2>
+
+<ul>
+
+<li><b>Trade Deficit</b> – mas mataas ang import kaysa export</li>
+<li><b>Trade Surplus</b> – mas mataas ang export kaysa import</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Kabutihan ng Pakikipagkalakalan</h2>
+
+<ul>
+<li>Mas maraming produkto ang mapagpipilian</li>
+<li>Mas tumataas ang kalidad ng produkto</li>
+<li>Lumalawak ang pamilihan ng bansa</li>
+<li>Nagkakaroon ng ugnayan ang iba't ibang bansa</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Di-Kabutihan</h2>
+
+<ul>
+<li>Pagiging palaasa sa imported na produkto</li>
+<li>Paghina ng lokal na industriya</li>
+<li>Pagpasok ng dayuhang kultura</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Mga Samahang Pandaigdigan</h2>
+
+<ul>
+
+<li>
+<b>World Trade Organization (WTO)</b> – namamahala sa pandaigdigang kalakalan.
+</li>
+
+<li>
+<b>Asia-Pacific Economic Cooperation (APEC)</b> – nagtataguyod ng kaunlarang pang-ekonomiya sa Asia-Pacific.
+</li>
+
+<li>
+<b>Association of Southeast Asian Nations (ASEAN)</b> – nagsusulong ng kooperasyon sa Timog-Silangang Asya.
+</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Mga Programang Sumusuporta sa Kalakalan</h2>
+
+<ul>
+
+<li><b>RA 7721</b> – Liberalisasyon sa sektor ng pagbabangko</li>
+
+<li><b>Foreign Trade Services Corps</b> – nagtataguyod ng lokal na produkto sa pandaigdigang pamilihan</li>
+
+<li><b>Trade and Industry Information Center</b> – nagbibigay ng impormasyon tungkol sa kalakalan</li>
+
+<li><b>Center for Industrial Competitiveness</b> – nagpapahusay sa kakayahan ng manggagawa</li>
+
+</ul>
+
+</section>
+
+<section>
+
+<h2>Karagdagang Konsepto</h2>
+
+<ul>
+
+<li><b>Liberalisasyon</b> – pagtanggal ng taripa at quota</li>
+<li><b>Deregulasyon</b> – pagbawas ng kontrol ng pamahalaan</li>
+<li><b>Pribatisasyon</b> – pagbebenta ng pag-aari ng gobyerno sa pribadong sektor</li>
+<li><b>Dumping</b> – pagbebenta ng sobrang produkto sa ibang bansa</li>
+<li><b>Balance of Payment</b> – talaan ng transaksyon ng isang bansa sa ibang bansa</li>
+
+</ul>
+
+</section>
+<section>
+    <h2>Mga Kaugnay na Larawan</h2>
+    <div class="media-container">
+        <img src="A6.1.jpg">
+        <img src="A6.2.jpg">
+    </div>
+</section>
+
+<div class="button-container">
+
+<button onclick="demoAlert()">Paalaala</button>
+
+</div>
+
+<footer>
+
+<div class="button-container">
+
+<button onclick="window.location.href='ARALIN 5.html'">Bumalik sa Aralin 5</button>
+
+<button onclick="confirmBackToMain()">Bumalik sa Main Page</button>
+
+</div>
+
+</footer>
+
+</body>
+</html>

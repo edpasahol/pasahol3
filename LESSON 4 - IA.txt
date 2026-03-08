@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Lesson 4 Reflection</title>
+
+<script type="text/javascript">
+
+function pageLoaded() {
+    alert("Welcome to the Lesson 4 Reflection Page!");
+}
+
+function highlightAnswer() {
+    alert("You are reading a reflection answer.");
+}
+
+function showCodeInfo() {
+    document.getElementById("codeInfo").innerHTML =
+    "This example demonstrates CSS borders, padding, and table formatting from Lesson 4.";
+}
+
+function confirmBack() {
+    var answer = confirm("Do you want to return to the homepage?");
+    if (answer == true) {
+        window.location = "homepage.html";
+    }
+}
+
+</script>
+
+<style>
+
+button {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 12px 20px;
+margin: 8px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+body {
+font-family: MV Boli;
+background-color: #0D7EF8;
+color: #223E9F;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #6DD0FF;
+color: #223E9F;
+text-align: center;
+padding: 20px;
+}
+
+section {
+background-color: #6DD0FF;
+margin: 30px auto;
+padding: 20px;
+width: 80%;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+border-radius: 10px;
+}
+
+h2 {
+color: #004aad;
+}
+
+p {
+text-align: justify;
+line-height: 1.6;
+}
+
+footer {
+background-color: #6DD0FF;
+color: #223E9F;
+text-align: center;
+padding: 10px;
+margin-top: 20px;
+}
+
+.highlight {
+color: #1a75ff;
+font-weight: bold;
+}
+
+.documentation {
+background-color: #aee5ff;
+border-radius: 8px;
+padding: 15px;
+margin-top: 20px;
+}
+
+.code-box {
+background-color: white;
+border-radius: 8px;
+padding: 15px;
+font-family: Courier New;
+}
+
+.output-box {
+background-color: white;
+border-radius: 8px;
+padding: 20px;
+margin-top: 10px;
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+table, th, td {
+border: 2px solid #333;
+padding: 10px;
+text-align: center;
+background-color: #e6f0ff;
+}
+
+</style>
+
+</head>
+
+<body onload="pageLoaded()">
+
+<header>
+
+<h1>Lesson 4: Formatting Borders & Tables</h1>
+<h3>Reflection and Example</h3>
+
+</header>
+
+<section>
+
+<h2>Reflection</h2>
+
+<p ondblclick="highlightAnswer()">
+In this lesson, I learned about <span class="highlight">CSS borders, padding, and table formatting</span>. Borders create visible boundaries around elements, and they can be customized by width, color, and style.  
+Padding adds space between content and the element’s border, improving readability and layout balance.  
+CSS allows applying padding to any element, unlike HTML padding, which mainly applies to tables.  
+
+I also explored styling <span class="highlight">tables</span> using CSS, including setting borders, cell padding, background colors, and text alignment. Properly formatting tables makes data more organized and visually appealing.  
+Mastering these properties enhances webpage structure, readability, and overall design aesthetics.
+</p>
+
+<div class="documentation">
+
+<h3>Example Code</h3>
+
+<p id="codeInfo" align="center" class="highlight">
+Hover over the code box to see which CSS properties are applied.
+</p>
+
+<div class="code-box" onmouseover="showCodeInfo()">
+
+&lt;style&gt;<br>
+div {<br>
+&nbsp;&nbsp;border: solid red 4px;<br>
+&nbsp;&nbsp;padding: 20px;<br>
+&nbsp;&nbsp;background-color: #ffffcc;<br>
+}<br>
+table {<br>
+&nbsp;&nbsp;border-collapse: collapse;<br>
+&nbsp;&nbsp;width: 80%;<br>
+}<br>
+th, td {<br>
+&nbsp;&nbsp;border: 2px solid #333;<br>
+&nbsp;&nbsp;padding: 12px;<br>
+&nbsp;&nbsp;background-color: #e6f0ff;<br>
+&nbsp;&nbsp;text-align: center;<br>
+}<br>
+&lt;/style&gt;<br><br>
+
+&lt;div&gt;This div has a red border, padding, and background color.&lt;/div&gt;<br><br>
+
+&lt;table&gt;<br>
+&nbsp;&nbsp;&lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Course&lt;/th&gt;<br>
+&nbsp;&nbsp;&lt;/tr&gt;<br>
+&nbsp;&nbsp;&lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;16&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;ICT&lt;/td&gt;<br>
+&nbsp;&nbsp;&lt;/tr&gt;<br>
+&nbsp;&nbsp;&lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mary&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;15&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;TLE&lt;/td&gt;<br>
+&nbsp;&nbsp;&lt;/tr&gt;<br>
+&lt;/table&gt;
+
+</div>
+
+<h3>Browser Output</h3>
+
+<div class="output-box">
+
+<div style="border: solid red 4px; padding: 20px; background-color: #ffffcc;">
+This div has a red border, padding, and background color.
+</div>
+
+<br>
+
+<table>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Course</th>
+</tr>
+<tr>
+<td>John</td>
+<td>16</td>
+<td>ICT</td>
+</tr>
+<tr>
+<td>Mary</td>
+<td>15</td>
+<td>TLE</td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<button onclick="window.location.href='LESSON 3a - IA.html'">Go Back to Previous Lesson</button>
+<button onclick="confirmBack()">Go Back to Main Page</button>
+<button onclick="window.location.href='LESSON 1 - IB.html'">Proceed to Next Quarter</button>
+
+</footer>
+
+</body>
+
+</html>

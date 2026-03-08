@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>4th Quarter ICT – Lesson 1 Reflection</title>
+
+<script type="text/javascript">
+function pageLoaded() {
+    alert("Welcome to Javascript!");
+}
+
+function highlightAnswer() {
+    alert("You are reading a reflection answer.");
+}
+
+function showCodeInfo() {
+    document.getElementById("codeInfo").innerHTML =
+    "This example demonstrates basic JavaScript usage: displaying text dynamically using document.write() and simple interaction with alert().";
+}
+
+function confirmBack() {
+    var answer = confirm("Do you want to return to the homepage?");
+    if (answer) {
+        window.location = "homepage.html";
+    }
+}
+</script>
+
+<style>
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #45a049;
+}
+body {
+    font-family: MV Boli;
+    background-color: #AEE5AA; /* Distinguish 4th quarter */
+    color: #223E9F;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #7ED97E;
+    color: #223E9F;
+    text-align: center;
+    padding: 20px;
+}
+section {
+    background-color: #CFF5C7;
+    margin: 30px auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+h2 {
+    color: #004aad;
+}
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+footer {
+    background-color: #7ED97E;
+    color: #223E9F;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.highlight {
+    color: #1a75ff;
+    font-weight: bold;
+}
+.documentation {
+    background-color: #d6f2d6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+}
+.code-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    font-family: Courier New;
+}
+.output-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+}
+</style>
+
+</head>
+
+<body onload="pageLoaded()">
+
+<header>
+<h1>4th Quarter ICT – Lesson 1: JavaScript and Dynamic Web Content</h1>
+<h3>Reflection and Example</h3>
+<p style="color:#004aad; font-style: italic;">Fourth Quarter Lesson</p>
+</header>
+
+<section>
+
+<h2>Reflection</h2>
+<p ondblclick="highlightAnswer()">
+In this lesson, I learned about JavaScript, which is essential for creating dynamic and interactive web pages. Unlike static HTML pages, JavaScript allows content to change and respond to user actions, making websites more engaging and user-friendly.  
+
+I also learned that JavaScript runs on the client-side, executes directly in the browser, and interacts with HTML and CSS to manipulate page elements in real-time. Key concepts include event handling, dynamic content updates, client-side validation, and integration with cookies for personalized experiences.  
+
+Understanding JavaScript helps bridge the gap between static and dynamic web content, enabling features like interactive menus, alerts, real-time content updates, and dynamic styling. Mastering these skills is crucial for modern web development.
+</p>
+
+<div class="documentation">
+<h3>Example Code</h3>
+<p id="codeInfo" align="center" class="highlight">
+Hover over the code box to learn what this JavaScript does.
+</p>
+
+<div class="code-box" onmouseover="showCodeInfo()">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;JS Example&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;script&gt;<br>
+&nbsp;&nbsp;alert("Welcome to JavaScript!");<br>
+&nbsp;&nbsp;document.write("This text is generated using JavaScript.");<br>
+&lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div>
+
+<h3>Browser Output</h3>
+<div class="output-box">
+<p>
+(("Welcome to Javascript!") - This message appeared earlier as an alert popup.)<br>
+This text is generated using JavaScript.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<button onclick="window.location='LESSON 4 - IA.html'">Go Back to Previous Quarter</button>
+<button onclick="confirmBack()">Go Back to Main Page</button>
+<button onclick="window.location='LESSON 2 - IB.html'">Proceed to Next Lesson</button>
+</footer>
+
+</body>
+</html>

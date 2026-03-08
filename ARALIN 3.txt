@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="tl">
+
+<head>
+<meta charset="UTF-8">
+<title>AP 9: Sektor ng Industriya</title>
+
+<style>
+body {
+    font-family: MV Boli;
+    background-color: #D6EAF8;
+    color: #1B4F72;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #85C1E9;
+    color: #1B4F72;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #EBF5FB;
+    margin: 30px auto;
+    padding: 20px;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #21618C;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+.highlight {
+    color: #154360;
+    font-weight: bold;
+}
+
+.media-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+img {
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+button {
+    background-color: #5DADE2;
+    color: #1B4F72;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3498DB;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+</style>
+
+<script>
+function pageLoaded() {
+    alert("Maligayang pagdating sa AP 9 Notes: Sektor ng Industriya!");
+}
+
+function demoAlert() {
+    alert("Tandaan: Ang industriya ang nagpoproseso ng hilaw na materyales upang maging mga produktong ginagamit ng tao.");
+}
+
+function confirmBackToMain() {
+    let userConfirmed = confirm("Sigurado ka bang gusto mong bumalik sa Main Page?");
+    if (userConfirmed) {
+        window.location.href = 'homepage.html';
+    }
+}
+</script>
+
+</head>
+
+<body onload="pageLoaded()">
+
+<header>
+<h1>AP 9: Sektor ng Industriya</h1>
+<h3>Interactive Notes</h3>
+</header>
+
+<section>
+<h2>💡 Kahulugan ng Industriya</h2>
+<p>
+Ang <span class="highlight">Industriya</span> ay tumutukoy sa pagproseso ng mga hilaw na materyal upang makagawa ng mga produktong ginagamit ng tao sa pamilihan.
+</p>
+</section>
+
+<section>
+<h2>📌 Sub-Sektor ng Industriya</h2>
+
+<ul>
+<li><span class="highlight">Pagmimina (Mining)</span></li>
+<li><span class="highlight">Pagmamanupaktura (Manufacturing)</span></li>
+<li><span class="highlight">Konstruksyon (Construction)</span></li>
+<li><span class="highlight">Utilities</span></li>
+</ul>
+
+</section>
+
+<section>
+<h2>⚙️ Mga Gawain sa Sub-Sektor</h2>
+
+<p><span class="highlight">Pagmimina</span></p>
+<ul>
+<li>Pagkuha at pagproseso ng yamang mineral</li>
+<li>Nagbibigay ng kita sa bansa</li>
+</ul>
+
+<p><span class="highlight">Pagmamanupaktura</span></p>
+<ul>
+<li>Paggawa ng produkto gamit ang makina o paggawa ng tao</li>
+<li>Nagkakaroon ng pisikal o kemikal na pagbabago sa materyales</li>
+</ul>
+
+<p><span class="highlight">Konstruksyon</span></p>
+<ul>
+<li>Pagtatayo ng mga gusali, kalsada, at iba pang estruktura</li>
+</ul>
+
+<p><span class="highlight">Utilities</span></p>
+<ul>
+<li>Serbisyong tubig, kuryente, gas, at iba pang imprastraktura</li>
+</ul>
+
+</section>
+
+<section>
+<h2>⭐ Kahalagahan ng Industriya</h2>
+
+<ul>
+<li>Nagbibigay ng trabaho sa maraming Pilipino</li>
+<li>Nagpoproseso ng produkto mula sa agrikultura</li>
+<li>Nagpapasok ng dolyar sa bansa</li>
+<li>Gumagamit ng makabagong teknolohiya</li>
+<li>Gumagawa ng intermediate products</li>
+</ul>
+
+</section>
+
+<section>
+<h2>🔗 Pagkakaugnay ng Agrikultura at Industriya</h2>
+
+<ul>
+<li>Nagmumula sa agrikultura ang hilaw na materyales ng industriya</li>
+<li>Ang industriya ang gumagawa ng kagamitan ng mga magsasaka</li>
+<li>Nagtutulungan ang dalawang sektor sa produksyon at ekonomiya</li>
+</ul>
+
+</section>
+
+<section>
+<h2>⚠️ Mga Suliranin ng Industriya</h2>
+
+<ul>
+<li>Kakulangan sa pondo</li>
+<li>Kompetisyon sa pandaigdigang merkado</li>
+<li>Paghina ng lokal na industriya</li>
+<li>Pagbabago ng demand sa merkado</li>
+</ul>
+
+</section>
+
+<section>
+<h2>📜 Mga Patakarang Pang-Ekonomiya</h2>
+
+<ul>
+<li><span class="highlight">Filipino First Policy</span></li>
+<li><span class="highlight">Oil Deregulation Law (RA 8479)</span></li>
+<li><span class="highlight">Microfinancing Program</span></li>
+<li><span class="highlight">Retail Trade Liberalization Act (RA 8762)</span></li>
+<li><span class="highlight">Build-Operate-Transfer (BOT)</span></li>
+</ul>
+
+</section>
+
+<section>
+<h2>🏛️ Mga Ahensya ng Pamahalaan</h2>
+
+<ul>
+<li><span class="highlight">Department of Trade and Industry (DTI)</span></li>
+<li><span class="highlight">Board of Investments (BOI)</span></li>
+<li><span class="highlight">Philippine Economic Zone Authority (PEZA)</span></li>
+<li><span class="highlight">Securities and Exchange Commission (SEC)</span></li>
+</ul>
+
+</section>
+
+<section>
+<h2>📚 Karagdagang Impormasyon</h2>
+
+<ul>
+<li><span class="highlight">Industriyalisasyon</span> – paggamit ng makinarya at teknolohiya sa produksyon</li>
+<li>Ang industriya ay kabilang sa <span class="highlight">sekundaryang sektor</span> ng ekonomiya</li>
+</ul>
+
+</section>
+
+<section>
+<h2>Mga Kaugnay na Larawan</h2>
+
+<div class="media-container">
+<img src="A3.1.jpg">
+<img src="A3.2.jpg">
+</div>
+
+</section>
+
+<div class="button-container">
+<button onclick="demoAlert()">Paalaala (Alert)</button>
+</div>
+
+<footer>
+<div class="button-container">
+
+<button onclick="window.location.href='ARALIN 2.html'">
+Bumalik sa Aralin 2
+</button>
+
+<button onclick="confirmBackToMain()">
+Bumalik sa Main Page
+</button>
+
+<button onclick="window.location.href='ARALIN 4.html'">
+Magpatuloy sa Aralin 4
+</button>
+
+</div>
+</footer>
+
+</body>
+</html>

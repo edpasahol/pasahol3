@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Table of Contents</title>
+
+<script type="text/javascript">
+
+function startPage() {
+
+    var userName = localStorage.getItem("portfolioName");
+
+    if (!userName) {
+
+        userName = prompt("Please enter your name:", "Student/Teacher");
+
+        if (userName == null || userName.trim() == "") {
+            userName = "Guest";
+        }
+
+        localStorage.setItem("portfolioName", userName);
+    }
+
+    alert("Welcome to My E-Portfolio, " + userName + "!");
+
+    document.getElementById("greeting").innerHTML =
+        "WELCOME TO MY E-PORTFOLIO, " + userName.toUpperCase() + "!";
+
+    var browserName = navigator.appName;
+
+    document.getElementById("browserInfo").innerHTML =
+        "You are using: " + browserName;
+
+}
+
+</script>
+
+<style>
+body {
+    font-family: MV Boli;
+    background-color: #0D7EF8;
+    margin: 0;
+    padding: 40px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.container {
+    background-color: #6DD0FF;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 280px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h2 {
+    color: #004aad;
+    text-align: left;
+}
+
+.btn {
+    display: block;
+    width: 90%;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px auto;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #1a75ff;
+}
+</style>
+
+</head>
+
+<body onload="startPage()">
+
+<h1 align="center" id="greeting"
+style="background-color: #6DD0FF; color: #223E9F;">
+WELCOME TO MY E-PORTFOLIO
+</h1>
+
+<div class="flex-container">
+
+<div class="container">
+<h1>ICT PART I</h1>
+
+<h2><strong>3rd Quarter</strong></h2>
+<a href="LESSON 1 - IA.html" class="btn">Lesson 1</a>
+<a href="LESSON 1A - IA.html" class="btn">Lesson 1A</a>
+<a href="LESSON 2 - IA.html" class="btn">Lesson 2</a>
+<a href="LESSON 3 - IA.html" class="btn">Lesson 3</a>
+<a href="LESSON 3A - IA.html" class="btn">Lesson 3A</a>
+<a href="LESSON 4 - IA.html" class="btn">Lesson 4</a>
+
+<h2><strong>4th Quarter</strong></h2>
+<a href="LESSON 1 - IB.html" class="btn">Lesson 1</a>
+<a href="LESSON 2 - IB.html" class="btn">Lesson 2</a>
+<a href="LESSON 3 - IB.html" class="btn">Lesson 3</a>
+<a href="LESSON 4 - IB.html" class="btn">Lesson 4</a>
+</div>
+
+<div class="container">
+<h1>ICT PART II</h1>
+
+<h2><strong>3rd Quarter</strong></h2>
+<a href="ENGLISH-MONTH.html" class="btn">English Month</a>
+<a href="VALUES-MONTH.html" class="btn">Values Month</a>
+
+<h2><strong>4th Quarter</strong></h2>
+<a href="MATH-MONTH.html" class="btn">Math Month</a>
+<a href="MAPEH-MONTH.html" class="btn">MAPEH Month</a>
+<a href="MITING-DE-AVANCE.html" class="btn">Miting de Avance</a>
+<a href="NOLI-ME-TANGERE.html" class="btn">Noli Me Tangere: Musical Play</a>
+</div>
+
+<div class="container">
+<h1>ARALING PANLIPUNAN</h1>
+
+
+<a href="ARALIN 1.html" class="btn">L1 - Pambansang Kaunlaran</a>
+<a href="ARALIN 2.html" class="btn">L2 - Sektor ng Agrikultura</a>
+<a href="ARALIN 3.html" class="btn">L3 - Sektor ng Industriya</a>
+<a href="ARALIN 4.html" class="btn">L4 - Sektor ng Paglilingkod</a>
+<a href="ARALIN 5.html" class="btn">L5 - Impormal na Sektor</a>
+<a href="ARALIN 6.html" class="btn">L6 - Patakarang Panlabas</a>
+
+</div>
+
+</div>
+
+<a href="credits.html" class="btn">Credits</a>
+
+</body>
+</html>

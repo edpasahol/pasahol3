@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="UTF-8">
+<title>AP 9: Impormal na Sektor</title>
+<style>
+body {
+    font-family: MV Boli;
+    background-color: #D6EAF8;
+    color: #1B4F72;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #85C1E9;
+    color: #1B4F72;
+    text-align: center;
+    padding: 20px;
+}
+section {
+    background-color: #EBF5FB;
+    margin: 20px auto;
+    padding: 18px;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+h2 { color: #21618C; margin-top: 0; }
+p { text-align: justify; line-height: 1.5; }
+ul { margin-left: 25px; }
+.highlight { color: #154360; font-weight: bold; }
+.media-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+img {
+    width: 240px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+}
+button {
+    background-color: #5DADE2;
+    color: #1B4F72;
+    border: none;
+    padding: 12px 18px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+button:hover { background-color: #3498DB; }
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+.note { background: #F0F8FF; padding: 10px; border-left: 4px solid #5DADE2; border-radius: 6px; }
+</style>
+
+<script>
+function pageLoaded() {
+    alert("Maligayang pagdating sa AP 9 Notes: Impormal na Sektor!");
+}
+
+function demoAlert() {
+    alert("Tandaan: Ang impormal na sektor ay nagbibigay ng hanapbuhay sa maraming Pilipino pero madalas walang pormal na proteksyon.");
+}
+
+function confirmBackToMain() {
+    let userConfirmed = confirm("Sigurado ka bang gusto mong bumalik sa Main Page?");
+    if (userConfirmed) {
+        window.location.href = 'homepage.html';
+    }
+}
+</script>
+</head>
+<body onload="pageLoaded()">
+
+<header>
+    <h1>AP 9: Impormal na Sektor</h1>
+    <h3>Interactive Notes</h3>
+</header>
+
+<section>
+    <h2>💡 Ano ang Impormal na Sektor?</h2>
+    <p>
+        Ang <span class="highlight">Impormal na Sektor</span> ay bahagi ng ekonomiya kung saan ang mga gawain ay karaniwang <strong>hindi rehistrado</strong> sa pamahalaan at <strong>hindi regular</strong> ang dokumentasyon. Madalas hindi kasama ang kita nito sa pormal na sukatan ng GDP.
+    </p>
+</section>
+
+<section>
+    <h2>📋 Mga Halimbawa</h2>
+    <ul>
+        <li>Nagtitinda sa kalsada (kalye vendors)</li>
+        <li>Pedicab at tricycle drivers</li>
+        <li>Maliit na karpintero, mananahi, repair shops</li>
+        <li>Hindi rehistradong pampublikong sasakyan</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🔎 Katangian</h2>
+    <ul>
+        <li>Hindi nakarehistro o walang pormal na lisensya</li>
+        <li>Karaniwang hindi nagbabayad ng buwis</li>
+        <li>Maliit ang kapital at hindi ambisyoso ang expansion</li>
+        <li>Flexible at madaling pasukin sa panahon ng kahirapan</li>
+    </ul>
+</section>
+
+<section>
+    <h2>✅ Kahalagahan</h2>
+    <ul>
+        <li>Pinagmumulan ng dagdag-kita para sa pamilya</li>
+        <li>Nagbibigay ng murang produkto/serbisyo sa komunidad</li>
+        <li>Nagsisilbing safety net kapag kulang ang pormal na trabaho</li>
+    </ul>
+</section>
+
+<section>
+    <h2>⚠️ Bakit Maraming Pumasok sa Impormal na Sektor?</h2>
+    <ul>
+        <li>Hindi kailangan ang malaking puhunan</li>
+        <li>Iwas sa mahigpit na regulasyon at red tape</li>
+        <li>Mabilis kumita para sa agarang pangangailangan</li>
+        <li>Kakulangan ng trabaho sa pormal na sektor</li>
+    </ul>
+</section>
+
+<section>
+    <h2>📉 Epekto sa Ekonomiya</h2>
+    <ul>
+        <li>Pagbaba ng nakokolektang buwis</li>
+        <li>Posibleng banta sa consumer protection</li>
+        <li>Paglaganap ng hindi rehistradong gawain</li>
+    </ul>
+</section>
+
+<section>
+    <h2>📜 Mga Batas at Programang Tumutulong</h2>
+    <ul>
+        <li><span class="highlight">RA 8425</span> – Social Reform and Poverty Alleviation Act (NAPA at suporta sa mahihirap)</li>
+        <li><span class="highlight">RA 9710</span> – Magna Carta of Women (proteksyon kontra diskriminasyon)</li>
+        <li><span class="highlight">RA 7875</span> – PhilHealth (kalusugan)</li>
+        <li><span class="highlight">RA 8282</span> – Social Security System (SSS)</li>
+        <li><span class="highlight">RA 7796</span> – TESDA (skills training)</li>
+    </ul>
+</section>
+
+<section>
+    <h2>🛠️ Mga Programa para sa Kabuhayan</h2>
+    <ul>
+        <li><span class="highlight">DILP</span> – livelihood training at suporta</li>
+        <li><span class="highlight">SEA-K</span> – tulong sa pagsisimula ng maliit na negosyo</li>
+        <li><span class="highlight">ISLA</span> – suporta sa mga mangingisda</li>
+        <li><span class="highlight">CWP</span> – cash-for-work sa rehabilitasyon</li>
+        <li><span class="highlight">4Ps</span> – conditional cash transfer para sa pinakamahihirap</li>
+    </ul>
+</section>
+
+<section>
+    <h2>💡 Quick Note</h2>
+    <div class="note">
+        Ang <strong>impormal na sektor</strong> ay mahalaga sa social safety net ng bansa, pero kailangan ng programa upang maprotektahan ang mga manggagawa at mas mapabilang sila sa pormal na sistema (tulad ng training, access sa credit, at social protection).
+    </div>
+</section>
+
+<section>
+    <h2>Mga Kaugnay na Larawan</h2>
+    <div class="media-container">
+        <img src="A5.1.jpg" alt="Vendor sa kalsada">
+        <img src="A5.2.jpg" alt="Tindahan">
+    </div>
+</section>
+
+<div class="button-container">
+    <button onclick="demoAlert()">Paalaala (Alert)</button>
+</div>
+
+<footer>
+    <div class="button-container">
+        <button onclick="window.location.href='ARALIN 4.html'">Bumalik sa Aralin 4</button>
+        <button onclick="confirmBackToMain()">Bumalik sa Main Page</button>
+        <button onclick="window.location.href='ARALIN 6.html'">Magpatuloy sa Aralin 6</button>
+    </div>
+</footer>
+
+</body>
+</html>

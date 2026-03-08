@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>4th Quarter ICT – Lesson 4 Reflection</title>
+
+<script type="text/javascript">
+function pageLoaded() {
+    alert("Welcome to the 4th Quarter ICT Lesson 4 Reflection Page!");
+}
+
+function highlightAnswer() {
+    alert("You are reading a reflection answer.");
+}
+
+function showEventInfo(eventType) {
+    let infoText = "";
+    if(eventType === "alert") {
+        infoText = "Alert Box: Displays a message that the user must acknowledge.";
+    } else if(eventType === "prompt") {
+        infoText = "Prompt Box: Asks the user to enter input before proceeding.";
+    } else if(eventType === "confirm") {
+        infoText = "Confirm Box: Requests user confirmation to proceed or cancel.";
+    } else if(eventType === "ifelse") {
+        infoText = "Conditional Statements: Executes code blocks based on evaluated conditions.";
+    }
+    document.getElementById("eventInfo").innerHTML = infoText;
+}
+
+function demoAlert() {
+    alert("This is an alert box!");
+}
+
+function demoPrompt() {
+    let name = prompt("Enter your name:", "Guest");
+    if(name !== null) {
+        document.getElementById("userOutput").innerHTML = "Hello, " + name + "!";
+    } else {
+        document.getElementById("userOutput").innerHTML = "You cancelled the prompt.";
+    }
+}
+
+function demoConfirm() {
+    let proceed = confirm("Do you want to proceed?");
+    document.getElementById("userOutput").innerHTML = proceed ? "You clicked OK!" : "You clicked Cancel!";
+}
+
+function demoConditional() {
+    let coins = parseInt(prompt("Enter number of coins you have:", "0"));
+    let output = "";
+    if(coins === 5) {
+        output = "Buy the Orange!";
+    } else if(coins < 4) {
+        output = "Buy the Apple!";
+    } else {
+        output = "Buy nothing!";
+    }
+    document.getElementById("userOutput").innerHTML = output;
+}
+
+function confirmBack() {
+    let userConfirmed = confirm("Are you sure you want to go back to the main page?");
+    if(userConfirmed) {
+        window.location = "homepage.html";
+    }
+    // If canceled, do nothing
+}
+</script>
+
+<style>
+body {
+    font-family: MV Boli;
+    background-color: #D6EAF8; /* 4th Quarter Theme */
+    color: #1B4F72;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #85C1E9;
+    color: #1B4F72;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #EBF5FB;
+    margin: 30px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 { color: #21618C; }
+h3, h4 { color: #154360; }
+p { text-align: justify; line-height: 1.6; }
+
+footer {
+    background-color: #85C1E9;
+    color: #1B4F72;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.highlight { color: #154360; font-weight: bold; }
+
+.event-box {
+    background-color: #D4E6F1;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+#userOutput {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 10px;
+    font-family: Courier New;
+    font-weight: bold;
+}
+
+button {
+    background-color: #5DADE2;
+    color: #1B4F72;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover { background-color: #3498DB; }
+
+pre {
+    background-color: #D4E6F1;
+    padding: 10px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+</style>
+
+</head>
+
+<body onload="pageLoaded()">
+
+<header>
+<h1>4th Quarter ICT – Lesson 4: JavaScript Events & Conditionals</h1>
+<h3>Reflection and Interactive Examples</h3>
+<p style="color:#154360; font-style: italic;">Fourth Quarter Lesson</p>
+</header>
+
+<section>
+
+<h2>Reflection</h2>
+<p ondblclick="highlightAnswer()">
+In this lesson, I learned that JavaScript events allow web pages to react to user interactions like clicks, mouse movements, and keyboard input. Popup boxes such as alert, prompt, and confirm provide ways to communicate with users. Variables store and manipulate data, and conditional statements let scripts make decisions based on logic and comparisons. Mastery of these concepts is essential for creating interactive, dynamic, and responsive web applications.
+</p>
+
+<div class="event-box">
+<h3>Interactive Examples</h3>
+
+<button onmouseover="showEventInfo('alert')" onclick="demoAlert()">Demo Alert Box</button>
+<button onmouseover="showEventInfo('prompt')" onclick="demoPrompt()">Demo Prompt Box</button>
+<button onmouseover="showEventInfo('confirm')" onclick="demoConfirm()">Demo Confirm Box</button>
+<button onmouseover="showEventInfo('ifelse')" onclick="demoConditional()">Demo Conditional Statement</button>
+
+<p id="eventInfo" class="highlight">Hover over a button to see explanation.</p>
+<div id="userOutput">Your output will appear here.</div>
+</div>
+
+<h3>Example Code Snippets</h3>
+
+<h4>Alert Box</h4>
+<pre><code>
+alert("This is an alert box!");
+</code></pre>
+
+<h4>Prompt Box</h4>
+<pre><code>
+let name = prompt("Enter your name:", "Guest");
+if(name !== null) {
+    document.getElementById("userOutput").innerHTML = "Hello, " + name + "!";
+} else {
+    document.getElementById("userOutput").innerHTML = "You cancelled the prompt.";
+}
+</code></pre>
+
+<h4>Confirm Box</h4>
+<pre><code>
+let proceed = confirm("Do you want to proceed?");
+document.getElementById("userOutput").innerHTML = proceed ? "You clicked OK!" : "You clicked Cancel!";
+</code></pre>
+
+<h4>Conditional Statement</h4>
+<pre><code>
+let coins = parseInt(prompt("Enter number of coins you have:", "0"));
+if(coins === 5) {
+    document.getElementById("userOutput").innerHTML = "Buy the Orange!";
+} else if(coins < 4) {
+    document.getElementById("userOutput").innerHTML = "Buy the Apple!";
+} else {
+    document.getElementById("userOutput").innerHTML = "Buy nothing!";
+}
+</code></pre>
+
+</section>
+
+<footer>
+<button onclick="window.location='LESSON 3 - IB.html'">Go Back to Previous Lesson</button>
+<button onclick="confirmBack()">Go Back to Main Page</button>
+</footer>
+
+</body>
+</html>

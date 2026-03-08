@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tl">
+
+<head>
+<meta charset="UTF-8">
+<title>AP 9: Sektor ng Agrikultura</title>
+
+<style>
+body {
+    font-family: MV Boli;
+    background-color: #D6EAF8;
+    color: #1B4F72;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #85C1E9;
+    color: #1B4F72;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #EBF5FB;
+    margin: 30px auto;
+    padding: 20px;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #21618C;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+.highlight {
+    color: #154360;
+    font-weight: bold;
+}
+
+.media-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+img {
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+button {
+    background-color: #5DADE2;
+    color: #1B4F72;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3498DB;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+</style>
+
+<script>
+function pageLoaded() {
+    alert("Maligayang pagdating sa AP 9 Notes: Sektor ng Agrikultura!");
+}
+
+function demoAlert() {
+    alert("Tandaan: Ang agrikultura ang pangunahing pinagmumulan ng pagkain at kabuhayan ng maraming Pilipino.");
+}
+
+function confirmBackToMain() {
+    let userConfirmed = confirm("Sigurado ka bang gusto mong bumalik sa Main Page?");
+    if (userConfirmed) {
+        window.location.href = 'homepage.html';
+    }
+}
+</script>
+
+</head>
+
+<body onload="pageLoaded()">
+
+<header>
+<h1>AP 9: Sektor ng Agrikultura</h1>
+<h3>Interactive Notes</h3>
+</header>
+
+<section>
+<h2>💡 Kahulugan ng Agrikultura</h2>
+<p>
+Ang <span class="highlight">Agrikultura</span> ay agham at sining ng pagpaparami ng mga halaman at hayop. 
+Ito ay tumutukoy sa mga gawain na may kaugnayan sa lupa, pananim, at alagang hayop.
+</p>
+
+<p>
+Ang salitang agrikultura ay mula sa:
+</p>
+
+<ul>
+<li><span class="highlight">Ager</span> – lupa</li>
+<li><span class="highlight">Cultura</span> – paglilinang</li>
+</ul>
+</section>
+
+<section>
+<h2>📌 Mga Gawain sa Sektor ng Agrikultura</h2>
+
+<ul>
+<li><span class="highlight">Pagsasaka</span></li>
+<li><span class="highlight">Pangingisda</span></li>
+<li><span class="highlight">Paghahayupan</span></li>
+<li><span class="highlight">Paggugubat o Pagtotroso</span></li>
+</ul>
+</section>
+
+<section>
+<h2>🌾 Gampanin ng mga Gawain</h2>
+
+<p><span class="highlight">Pagsasaka</span></p>
+<ul>
+<li>Pangunahing pananim: palay, mais, niyog, tubo, saging, pinya</li>
+<li>Malaking ambag sa pagkain at ekonomiya</li>
+</ul>
+
+<p><span class="highlight">Pangingisda</span></p>
+<ul>
+<li>Nauuri sa komersiyal, munisipal, at aquaculture</li>
+<li>Kabilang ang panghuhuli ng hipon at sugpo</li>
+</ul>
+
+<p><span class="highlight">Paghahayupan</span></p>
+<ul>
+<li>Pag-aalaga ng hayop para sa karne, gatas, itlog, at hibla</li>
+</ul>
+
+<p><span class="highlight">Paggugubat</span></p>
+<ul>
+<li>Pinagkukunan ng kahoy, plywood, rattan, kawayan, at iba pa</li>
+</ul>
+
+</section>
+
+<section>
+<h2>⭐ Kahalagahan ng Agrikultura</h2>
+
+<ul>
+<li>Pinagmumulan ng pagkain</li>
+<li>Pinagkukunan ng hilaw na materyales</li>
+<li>Nagbibigay ng trabaho sa maraming Pilipino</li>
+<li>Nagpapasok ng dolyar sa bansa</li>
+<li>Nagbibigay ng manggagawa sa ibang sektor</li>
+</ul>
+
+</section>
+
+<section>
+<h2>⚠️ Mga Suliranin ng Agrikultura</h2>
+
+<ul>
+<li>Pagliit ng lupang sakahan</li>
+<li>Kakulangan sa teknolohiya at pasilidad</li>
+<li>Climate change</li>
+<li>Polusyon sa pangisdaan</li>
+<li>Pagkakaroon ng peste sa hayop</li>
+<li>Pagkaubos ng kagubatan</li>
+</ul>
+
+</section>
+
+<section>
+<h2>📜 Mga Programa at Patakaran</h2>
+
+<ul>
+<li><span class="highlight">CARP</span> – pamamahagi ng lupa sa mga magsasaka</li>
+<li><span class="highlight">Philippine Fisheries Code of 1998</span> – wastong paggamit ng yamang-dagat</li>
+<li><span class="highlight">NIPAS</span> – proteksyon sa kagubatan</li>
+<li><span class="highlight">LANDBANK</span> – tulong pinansyal sa mga magsasaka</li>
+</ul>
+
+</section>
+
+<section>
+<h2>🏛️ Mga Ahensya ng Pamahalaan</h2>
+
+<ul>
+<li><span class="highlight">Department of Agriculture (DA)</span></li>
+<li><span class="highlight">BFAR</span> – Bureau of Fisheries and Aquatic Resources</li>
+<li><span class="highlight">BAI</span> – Bureau of Animal Industry</li>
+<li><span class="highlight">ERDB</span> – Ecosystem Research and Development Bureau</li>
+</ul>
+
+</section>
+
+<section>
+<h2>Mga Kaugnay na Larawan</h2>
+
+<div class="media-container">
+<img src="A2.1.JPG">
+<img src="A2.2.JPG">
+</div>
+
+</section>
+
+<div class="button-container">
+<button onclick="demoAlert()">Paalaala (Alert)</button>
+</div>
+
+<footer>
+<div class="button-container">
+
+<button onclick="window.location.href='ARALIN 1.html'">
+Bumalik sa Aralin 1
+</button>
+
+<button onclick="confirmBackToMain()">
+Bumalik sa Main Page
+</button>
+
+<button onclick="window.location.href='ARALIN 3.html'">
+Magpatuloy sa Aralin 3
+</button>
+
+</div>
+</footer>
+
+</body>
+</html>

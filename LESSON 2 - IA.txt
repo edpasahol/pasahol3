@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Lesson 2 Reflection</title>
+
+<script type="text/javascript">
+
+function pageLoaded() {
+    alert("Welcome to the Lesson 2 Reflection Page!");
+}
+
+function highlightAnswer() {
+    alert("You are reading a reflection answer.");
+}
+
+function showCodeInfo() {
+    document.getElementById("codeInfo").innerHTML =
+    "This example demonstrates CSS properties from Lesson 2: text-indent, text-transform, line-height, font-weight, font-style, text-align, color, background, font-family, and font-size.";
+}
+
+function confirmBack() {
+    var answer = confirm("Do you want to return to the homepage?");
+    if (answer == true) {
+        window.location = "homepage.html";
+    }
+}
+
+</script>
+
+<style>
+
+button {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 12px 20px;
+margin: 8px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+body {
+font-family: MV Boli;
+background-color: #0D7EF8;
+color: #223E9F;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #6DD0FF;
+color: #223E9F;
+text-align: center;
+padding: 20px;
+}
+
+section {
+background-color: #6DD0FF;
+margin: 30px auto;
+padding: 20px;
+width: 80%;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+border-radius: 10px;
+}
+
+h2 {
+color: #004aad;
+}
+
+p {
+text-align: justify;
+line-height: 1.6;
+}
+
+footer {
+background-color: #6DD0FF;
+color: #223E9F;
+text-align: center;
+padding: 10px;
+margin-top: 20px;
+}
+
+.highlight {
+color: #1a75ff;
+font-weight: bold;
+}
+
+.documentation {
+background-color: #aee5ff;
+border-radius: 8px;
+padding: 15px;
+margin-top: 20px;
+}
+
+.code-box {
+background-color: white;
+border-radius: 8px;
+padding: 15px;
+font-family: Courier New;
+}
+
+.output-box {
+background-color: white;
+border-radius: 8px;
+padding: 20px;
+margin-top: 10px;
+}
+
+</style>
+
+</head>
+
+<body onload="pageLoaded()">
+
+<header>
+
+<h1>Lesson 2: Advanced CSS Text Formatting</h1>
+<h3>Reflection and Example</h3>
+
+</header>
+
+<section>
+
+<h2>Reflection</h2>
+
+<p ondblclick="highlightAnswer()">
+In this lesson, I explored more CSS text formatting properties to enhance webpage readability and visual appeal.  
+I learned how to <span class="highlight">bold</span> text using <span class="highlight">font-weight</span> and <span class="highlight">italicize</span> text with <span class="highlight">font-style</span>.  
+I also discovered how to control text layout with <span class="highlight">text-indent</span> and <span class="highlight">text-align</span>, which help structure content neatly.  
+
+Adjusting <span class="highlight">line-height</span> improves spacing between lines for better legibility.  
+The <span class="highlight">text-transform</span> property lets me control capitalization using uppercase, lowercase, or capitalize options.  
+Applying <span class="highlight">color</span> and <span class="highlight">background</span> styling enhances emphasis and aesthetic appeal.  
+
+Overall, this lesson reinforced the importance of combining multiple CSS properties to create professional, well-formatted, and visually engaging text on webpages.
+</p>
+
+<div class="documentation">
+
+<h3>Example Code</h3>
+
+<p id="codeInfo" align="center" class="highlight">
+Hover over the code box to see which CSS properties are applied.
+</p>
+
+<div class="code-box" onmouseover="showCodeInfo()">
+
+&lt;style&gt;<br>
+p.example {<br>
+&nbsp;&nbsp;font-weight: bold;<br>
+&nbsp;&nbsp;font-style: italic;<br>
+&nbsp;&nbsp;text-indent: 30px;<br>
+&nbsp;&nbsp;text-align: justify;<br>
+&nbsp;&nbsp;line-height: 1.8;<br>
+&nbsp;&nbsp;text-transform: capitalize;<br>
+&nbsp;&nbsp;color: #333333;<br>
+&nbsp;&nbsp;background: #ffff99;<br>
+&nbsp;&nbsp;font-family: 'Arial', sans-serif;<br>
+&nbsp;&nbsp;font-size: 18px;<br>
+}<br>
+&lt;/style&gt;<br><br>
+
+&lt;p class="example"&gt;this is a sample paragraph demonstrating bold, italic, indented, justified, and capitalized text with line spacing, font changes, text color, and background color.&lt;/p&gt;
+
+</div>
+
+<h3>Browser Output</h3>
+
+<div class="output-box">
+
+<p class="example" style="font-weight:bold; font-style:italic; text-indent:30px; text-align:justify; line-height:1.8; text-transform:capitalize; color:#333333; background:#ffff99; font-family:'Arial', sans-serif; font-size:18px;">
+This is a sample paragraph demonstrating bold, italic, indented, justified, and capitalized text with line spacing, font changes, text color, and background color.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<button onclick="window.location.href='LESSON 1A - IA.html'">Go Back to Previous Lesson</button>
+<button onclick="confirmBack()">Go Back to Main Page</button>
+<button onclick="window.location.href='LESSON 3 - IA.html'">Proceed to Next Lesson</button>
+
+</footer>
+
+</body>
+
+</html>

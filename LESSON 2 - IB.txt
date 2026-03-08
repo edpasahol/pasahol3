@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>4th Quarter ICT – Lesson 2 Reflection</title>
+
+<script type="text/javascript">
+function pageLoaded() {
+    alert("Welcome to the 4th Quarter ICT Lesson 2 Reflection Page!");
+}
+
+function highlightAnswer() {
+    alert("You are reading a reflection answer.");
+}
+
+function showCodeInfo(codeType) {
+    let infoText = "";
+    if(codeType === "head") {
+        infoText = "This script is placed in the HEAD. It runs before the page loads, ideal for function definitions.";
+    } else if(codeType === "body") {
+        infoText = "This script is placed in the BODY. It runs as the page content loads.";
+    } else if(codeType === "external") {
+        infoText = "This is an external JavaScript file. It promotes code reuse and easier maintenance.";
+    }
+    document.getElementById("codeInfo").innerHTML = infoText;
+}
+
+function confirmBack() {
+    var answer = confirm("Do you want to return to the homepage?");
+    if(answer) {
+        window.location = "homepage.html";
+    }
+}
+</script>
+
+<style>
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+button:hover { background-color: #45a049; }
+
+body {
+    font-family: MV Boli;
+    background-color: #AEE5AA; /* 4th Quarter Theme */
+    color: #223E9F;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #7ED97E;
+    color: #223E9F;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #CFF5C7;
+    margin: 30px auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+h2 { color: #004aad; }
+p { text-align: justify; line-height: 1.6; }
+
+footer {
+    background-color: #7ED97E;
+    color: #223E9F;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.highlight { color: #1a75ff; font-weight: bold; }
+
+.documentation {
+    background-color: #d6f2d6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.code-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    font-family: Courier New;
+    margin-bottom: 15px;
+}
+
+.output-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+}
+</style>
+
+</head>
+
+<body onload="pageLoaded()">
+
+<header>
+<h1>4th Quarter ICT – Lesson 2: JavaScript Placement, Comments & Guidelines</h1>
+<h3>Reflection and Example</h3>
+<p style="color:#004aad; font-style: italic;">Fourth Quarter Lesson</p>
+</header>
+
+<section>
+
+<h2>Reflection</h2>
+<p ondblclick="highlightAnswer()">
+In this lesson, I learned how the placement of JavaScript affects its execution. Scripts in the &lt;head&gt; run before the page content loads, suitable for function definitions. Scripts in the &lt;body&gt; run as the page content loads, useful for immediate outputs.  
+
+Using external JavaScript files enhances code reuse, simplifies maintenance, and avoids redundancy. Comments, whether single-line (//) or multi-line (/* ... */), improve readability and debugging. I also learned important coding rules: JavaScript is case-sensitive, whitespace is flexible for readability, and line-breaking must be done carefully to avoid syntax errors. Mastery of these practices is essential for creating clean, functional, and maintainable web scripts.
+</p>
+
+<div class="documentation">
+<h3>Example JavaScript Code</h3>
+<p id="codeInfo" align="center" class="highlight">
+Hover over a code box to see its explanation.
+</p>
+
+<div class="code-box" onmouseover="showCodeInfo('head')">
+&lt;head&gt;<br>
+&lt;script&gt;<br>
+&nbsp;&nbsp;function greet() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;alert("Hello Visitor!");<br>
+&nbsp;&nbsp;}<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;
+</div>
+
+<div class="code-box" onmouseover="showCodeInfo('body')">
+&lt;body&gt;<br>
+&lt;script&gt;<br>
+&nbsp;&nbsp;document.write("This message is displayed as the body loads.");<br>
+&lt;/script&gt;<br>
+&lt;/body&gt;
+</div>
+
+<div class="code-box" onmouseover="showCodeInfo('external')">
+&lt;!-- External JS File --&gt;<br>
+&lt;script src="myScript.js"&gt;&lt;/script&gt;<br>
+&lt;!-- Note: myScript.js contains only JS code, no &lt;script&gt; tags inside --&gt;
+</div>
+
+<h3>Browser Output</h3>
+<div class="output-box">
+<p>
+Alerts from head scripts appear first.<br>
+Text from body scripts appears as the page content loads.<br>
+External JS behaves like any other script, allowing modular code reuse.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<button onclick="window.location='LESSON 1 - IB.html'">Go Back to Previous Lesson</button>
+<button onclick="confirmBack()">Go Back to Main Page</button>
+<button onclick="window.location='LESSON 3 - IB.html'">Proceed to Next Lesson</button>
+</footer>
+
+</body>
+</html>

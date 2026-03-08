@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Credits Page</title>
+
+<style>
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+body {
+    font-family: MV Boli;
+    background-color: #0D7EF8;
+    color: #223E9F;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6DD0FF;
+    color: #223E9F;
+    text-align: center;
+    padding: 25px;
+}
+
+section {
+    background-color: #6DD0FF;
+    margin: 40px auto;
+    padding: 25px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #004aad;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+li {
+    margin: 8px 0;
+}
+
+footer {
+    background-color: #6DD0FF;
+    color: #223E9F;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+a {
+    color: #004aad;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1a75ff;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Credits Page</h1>
+<p>People and resources that helped make this project possible.</p>
+</header>
+
+<section>
+
+<h2>🎓 Acknowledgements</h2>
+
+<ul>
+<li>Dearest Parents</li>
+<li>Grade 9</li>
+<li>Mrs. Mary Grace G. Uminga</li>
+<li>Mr. Raymundo S. Calimbas Jr.</li>
+<li>Jade I. </p>
+</ul>
+
+<p>
+Special thanks to everyone who supported the completion of this project!
+</p>
+<p>
+Website Developer: Edson Nathaniel C. Pasahol
+</p>
+</section>
+
+<footer>
+
+<button onclick="window.location.href='homepage.html'">
+Go Back to Main Page
+</button>
+
+</footer>
+
+</body>
+</html>

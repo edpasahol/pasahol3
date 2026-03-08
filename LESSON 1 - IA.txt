@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Lesson 1 Reflection</title>
+
+<script type="text/javascript">
+
+function pageLoaded() {
+    alert("Welcome to the Lesson 1 Reflection Page!");
+}
+
+function highlightAnswer() {
+    alert("You are reading a reflection answer.");
+}
+
+function showCodeInfo() {
+    document.getElementById("codeInfo").innerHTML =
+    "This example demonstrates basic CSS typography properties such as font-family, font-size, color, and text-align.";
+}
+
+function confirmBack() {
+    var answer = confirm("Do you want to return to the homepage?");
+    if (answer == true) {
+        window.location = "homepage.html";
+    }
+}
+
+</script>
+
+<style>
+
+button {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 12px 20px;
+margin: 8px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+body {
+font-family: MV Boli;
+background-color: #0D7EF8;
+color: #223E9F;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #6DD0FF;
+color: #223E9F;
+text-align: center;
+padding: 20px;
+}
+
+section {
+background-color: #6DD0FF;
+margin: 30px auto;
+padding: 20px;
+width: 80%;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+border-radius: 10px;
+}
+
+h2 {
+color: #004aad;
+}
+
+p {
+text-align: justify;
+line-height: 1.6;
+}
+
+footer {
+background-color: #6DD0FF;
+color: #223E9F;
+text-align: center;
+padding: 10px;
+margin-top: 20px;
+}
+
+.highlight {
+color: #1a75ff;
+font-weight: bold;
+}
+
+.documentation {
+background-color: #aee5ff;
+border-radius: 8px;
+padding: 15px;
+margin-top: 20px;
+}
+
+.code-box {
+background-color: white;
+border-radius: 8px;
+padding: 15px;
+font-family: Courier New;
+}
+
+.output-box {
+background-color: white;
+border-radius: 8px;
+padding: 20px;
+margin-top: 10px;
+}
+
+</style>
+
+</head>
+
+<body onload="pageLoaded()">
+
+<header>
+
+<h1>Lesson 1: CSS Typography</h1>
+<h3>Reflection and Example</h3>
+
+</header>
+
+
+<section>
+
+<h2>Reflection</h2>
+
+<p ondblclick="highlightAnswer()">
+
+In this lesson, I learned about CSS typography and how it controls the appearance of text on a webpage. Typography is important in web design because it improves readability and helps organize information clearly for users. By using CSS properties, developers can customize how text looks and how it is displayed on different parts of a webpage.
+
+One of the key things I learned is the use of <span class="highlight">font-family</span>, which allows us to choose the typeface used for text. This property can include several fonts so that if one is not available, the browser will use the next one in the list. I also learned about <span class="highlight">font-size</span> and <span class="highlight">font-weight</span>, which control the size and thickness of text. These properties help emphasize important information and make content easier to read.
+
+Another important concept is text formatting using properties such as <span class="highlight">text-align</span>, <span class="highlight">line-height</span>, and <span class="highlight">letter-spacing</span>. These properties control how text is spaced and aligned, which improves the overall structure and visual appearance of a webpage. Proper spacing between lines and characters helps prevent text from looking crowded.
+
+Overall, this lesson helped me understand how typography plays a major role in web design. By using different CSS typography properties, I can make webpages more readable, organized, and visually appealing. This knowledge will help me create better and more professional-looking websites in the future.
+
+</p>
+
+<div class="documentation">
+
+<h3>Example Code</h3>
+
+<p id="codeInfo" align="center" class="highlight">
+Hover over the code box to learn more about it.
+</p>
+
+<div class="code-box" onmouseover="showCodeInfo()">
+
+&lt;style&gt;<br>
+p {<br>
+&nbsp;&nbsp;font-family: Arial;<br>
+&nbsp;&nbsp;font-size: 20px;<br>
+&nbsp;&nbsp;color: blue;<br>
+&nbsp;&nbsp;text-align: center;<br>
+}<br>
+&lt;/style&gt;<br><br>
+
+&lt;p&gt;This is a CSS Typography Example&lt;/p&gt;
+
+</div>
+
+
+<h3>Browser Output</h3>
+
+<div class="output-box">
+
+<p style="font-family: Arial; font-size:20px; color:blue; text-align:center;">
+This is a CSS Typography Example
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+<!-- Go back to main page -->
+<button onclick="confirmBack()">Go Back to Main Page</button>
+
+<!-- Proceed to next lesson -->
+<button onclick="window.location.href='LESSON 1A - IA.html'">Proceed to Next Lesson</button>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>English Month Reflection</title>
+    <style>
+        body {
+            font-family: MV Boli;
+            background-color: #D6EAF8;
+            color: #1B4F72;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #85C1E9;
+            color: #1B4F72;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #EBF5FB;
+            margin: 30px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #21618C;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #154360;
+            font-weight: bold;
+        }
+
+        .documentation {
+            background-color: #D4E6F1;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        img,
+        video {
+            width: 220px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            background-color: #5DADE2;
+            color: #1B4F72;
+            border: none;
+            padding: 12px 20px;
+            margin: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #3498DB;
+        }
+.center-buttons {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    gap: 15px;               /* space between buttons */
+    flex-wrap: wrap;         /* wraps buttons if screen is small */
+    margin-top: 20px;        /* spacing from content above */
+}
+    </style>
+
+    <script type="text/javascript">
+        function pageLoaded() {
+            alert("Welcome to the English Month Reflection Page!");
+        }
+
+        function highlightAnswer() {
+            alert("You are reading a reflection answer.");
+        }
+
+        function demoAlert() {
+            alert("Don't forget to celebrate books and reading every day!");
+        }
+
+        function demoPrompt() {
+            let favoriteBook = prompt("Enter your favorite book from English Month activities:", "Harry Potter");
+            if (favoriteBook !== null) {
+                document.getElementById("userOutput").innerHTML = "Your favorite book is: " + favoriteBook;
+            } else {
+                document.getElementById("userOutput").innerHTML = "You cancelled the prompt.";
+            }
+        }
+
+        function demoConfirm() {
+            let proceed = confirm("Do you want to revisit the event photos?");
+            document.getElementById("userOutput").innerHTML = proceed ? "Enjoy the photos below!" : "Maybe next time!";
+        }
+	function confirmBackToMain() {
+    let userConfirmed = confirm("Are you sure you want to go back to the main page?");
+    if (userConfirmed) {
+        window.location.href = 'homepage.html';
+    }
+    // If canceled, do nothing
+}
+    </script>
+</head>
+
+<body onload="pageLoaded()">
+
+    <header>
+        <h1>English Month Reflection</h1>
+        <h3>Book Parade & Booklandia Experiences</h3>
+        <p style="font-style: italic;">Third Quarter Event</p>
+    </header>
+
+    <section>
+        <h2>Reflection Questions and Answers</h2>
+
+        <p><strong>1. What is the most important thing I learned from the event?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            I learned how teamwork, creativity, and confidence are essential in presenting our ideas and
+            characters during the Book Parade and Booklandia competitions.
+        </p>
+
+        <p><strong>2. How can I apply what I learned in real-life situations?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            I can use these skills in group projects, presentations, and leadership activities, where
+            creativity and collaboration matter.
+        </p>
+
+        <p><strong>3. Did I actively participate in the event? How?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            Yes, I participated in the Book Parade and coached our section's representatives for
+            Booklandia, helping them prepare their characters, outfits, and performance.
+        </p>
+
+        <p><strong>4. If I were to teach this topic/subject to a classmate, how would I explain it?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            I would explain that events like these promote creativity, teamwork, and confidence,
+            and I would show examples of costumes and performances from our Book Parade and Booklandia
+            activities.
+        </p>
+
+        <p><strong>5. Why is it important to have an event (per subject)? Explain your answer.</strong></p>
+        <p ondblclick="highlightAnswer()">
+            Events provide opportunities to apply classroom learning in real-life scenarios, enhance
+            practical skills, and foster social interaction among students.
+        </p>
+
+        <div class="documentation">
+            <h3>Event Documentation</h3>
+            <p>
+                English Month was celebrated with fun and engaging activities like Book Parade and
+                Booklandia. Students showcased their favorite book characters, and the best
+                performers competed for recognition. Our section actively participated and supported
+                representatives, emphasizing creativity, preparation, and confidence.
+            </p>
+
+            <div class="media-container">
+                <img src="E.M. 1.JPG" alt="Book Parade Photo 1">
+                <img src="E.M. 2.JPG" alt="Book Parade Photo 2">
+                <img src="E.M. 3.JPG" alt="Book Parade Photo 3">
+            </div>
+        </div>
+
+        <div class="center-buttons">
+    <button onclick="demoAlert()">Event Reminder (Alert)</button>
+</div>
+    </section>
+
+  <footer>
+    <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; padding: 10px;">
+       <button onclick="confirmBackToMain()">Go Back to Main Page</button>
+        <button onclick="window.location.href='VALUES-MONTH.html'">Proceed to Next Event</button>
+    </div>
+</footer>
+
+</body>
+
+</html>

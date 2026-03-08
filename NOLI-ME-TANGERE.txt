@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Noli Me Tangere: Musical Play Reflection</title>
+    <style>
+        body {
+            font-family: MV Boli;
+            background-color: #FDEBD0;
+            color: #AF601A;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #F9E79F;
+            color: #AF601A;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #FCF3CF;
+            margin: 30px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #B9770E;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #B9770E;
+            font-weight: bold;
+        }
+
+        .documentation {
+            background-color: #F7DC6F;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        img,
+        video {
+            width: 220px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            background-color: #F4D03F;
+            color: #AF601A;
+            border: none;
+            padding: 12px 20px;
+            margin: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #D4AC0D;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+    </style>
+
+    <script>
+        function pageLoaded() {
+            alert("Welcome to the Noli Me Tangere: Musical Play Reflection Page!");
+        }
+
+        function highlightAnswer() {
+            alert("You are reading a reflection answer.");
+        }
+
+        function demoAlert() {
+            alert("The musical play demonstrates Filipino literature, culture, and history!");
+        }
+
+        function confirmBackToMain() {
+            let userConfirmed = confirm("Are you sure you want to go back to the main page?");
+            if (userConfirmed) {
+                window.location.href = 'homepage.html';
+            }
+        }
+    </script>
+</head>
+
+<body onload="pageLoaded()">
+
+    <header>
+        <h1>Noli Me Tangere: Musical Play Reflection</h1>
+        <h3>Depicting Jose Rizal's Classic Novel</h3>
+        <p style="font-style: italic;">Fourth Quarter Event</p>
+    </header>
+
+    <section>
+        <h2>Reflection Questions and Answers</h2>
+
+        <p><strong>1. What is the most important thing I learned from the event?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            I learned how literature can be transformed into a performance, conveying historical context, emotions, and Filipino cultural values to an audience.
+        </p>
+
+        <p><strong>2. How can I apply what I learned in real-life situations?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            I can apply storytelling, performance skills, and appreciation for literature in school projects, creative activities, or presentations.
+        </p>
+
+        <p><strong>3. Did I actively participate in the event? How?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            Yes, I participated by being one of the main characters - Basilio and by making the script and the music interpretations used in the play, I also helped with preparations with props.
+        </p>
+
+        <p><strong>4. If I were to teach this topic/subject to a classmate, how would I explain it?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            I would explain the significance of Noli Me Tangere in Philippine history, and how adapting it into a musical play helps in understanding its themes, characters, and social commentary.
+        </p>
+
+        <p><strong>5. Why is it important to have an event (per subject)? Explain your answer.</strong></p>
+        <p ondblclick="highlightAnswer()">
+            Events like this reinforce lessons from literature, history, and arts, making learning interactive, engaging, and memorable.
+        </p>
+
+        <div class="documentation">
+            <h3>Event Documentation</h3>
+            <p>
+                The Noli Me Tangere musical play was a creative adaptation of Jose Rizal's classic novel, performed by students to illustrate social issues, character development, and Filipino heritage. The event promoted appreciation for literature, teamwork, and stagecraft.
+            </p>
+
+            <div class="media-container">
+                <img src="N.M.T.M.P. 1.JPG" alt="Musical Play Photo 1">
+                <a href="https://drive.google.com/file/d/1iE6GDIvGzZYP7oICdfdJcVf9cEBs0ZkQ/view?usp=drive_link" target="_blank"> Watch Our Noli Me Tangere: Musical Play Performance! </a>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="demoAlert()">Event Reminder (Alert)</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="button-container">
+<button onclick="window.location.href='MITING-DE-AVANCE.html'">Go Back to Previous Event</button>
+            <button onclick="confirmBackToMain()">Go Back to Main Page</button>
+            
+        </div>
+    </footer>
+
+</body>
+</html>

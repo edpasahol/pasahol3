@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MAPEH Month Reflection</title>
+    <style>
+        body {
+            font-family: MV Boli;
+            background-color: #FADBD8;
+            color: #78281F;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #F1948A;
+            color: #78281F;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #FDEDEC;
+            margin: 30px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #C0392B;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #922B21;
+            font-weight: bold;
+        }
+
+        .documentation {
+            background-color: #F5B7B1;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        img,
+        video {
+            width: 220px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            background-color: #EC7063;
+            color: #78281F;
+            border: none;
+            padding: 12px 20px;
+            margin: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #CD6155;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+    </style>
+
+    <script>
+        function pageLoaded() {
+            alert("Welcome to the MAPEH Month Reflection Page!");
+        }
+
+        function highlightAnswer() {
+            alert("You are reading a reflection answer.");
+        }
+
+        function demoAlert() {
+            alert("Celebrate music, arts, and sports every day!");
+        }
+
+        function confirmBackToMain() {
+            let userConfirmed = confirm("Are you sure you want to go back to the main page?");
+            if (userConfirmed) {
+                window.location.href = 'homepage.html';
+            }
+        }
+    </script>
+</head>
+
+<body onload="pageLoaded()">
+
+    <header>
+        <h1>MAPEH Month Reflection</h1>
+        <h3>Music, Arts, PE, and Health Events</h3>
+        <p style="font-style: italic;">Fourth Quarter Event</p>
+    </header>
+
+    <section>
+        <h2>Reflection Questions and Answers</h2>
+
+        <p><strong>1. What is the most important thing I learned from the event?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            I learned that creativity, coordination, and rhythm are important in music, arts, and dance activities like OPM Duet, Folk Dance, and BOTB.
+        </p>
+
+        <p><strong>2. How can I apply what I learned in real-life situations?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            I can apply these skills in team projects, performances, and daily physical activities that require cooperation and creativity.
+        </p>
+
+        <p><strong>3. Did I actively participate in the event? How?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            Yes, I participated in Folk Dance and BOTB, performing and collaborating with classmates for choreography and coordination.
+        </p>
+
+        <p><strong>4. If I were to teach this topic/subject to a classmate, how would I explain it?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            I would demonstrate the importance of teamwork, practice, and creativity in MAPEH activities, and show examples from our Folk Dance and BOTB performances.
+        </p>
+
+        <p><strong>5. Why is it important to have an event (per subject)? Explain your answer.</strong></p>
+        <p ondblclick="highlightAnswer()">
+            Events allow students to apply what they learn in the classroom, develop new talents, and foster camaraderie among peers.
+        </p>
+
+        <div class="documentation">
+            <h3>Event Documentation</h3>
+            <p>
+                MAPEH Month featured OPM Duet, Poster-Making, Folk Dance, Street Dance, and BOTB, promoting arts, music, health, and physical activity. Students showcased their talents, collaborated in performances, and supported each other, encouraging creativity and teamwork.
+            </p>
+
+            <div class="media-container">
+                <img src="MAPEH 1.JPG" alt="BOTB Photo">
+                <img src="MAPEH 2.JPG" alt="Folk Dance Photo">
+                <a href="https://drive.google.com/file/d/1zVcfrCWwa3Sr8rnOsrdLfsJEt_LLf57o/view?usp=drive_link" target="_blank"> Watch Our BOTB Performance! </a>
+		<a href="https://drive.google.com/file/d/1KbuC_LIoKqTfBDMLzWeMguLk_4PHtjsw/view?usp=drive_link" target="_blank"> Watch Our Folk Dance Performance! </a>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="demoAlert()">Event Reminder (Alert)</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="button-container">
+<button onclick="window.location.href='MATH-MONTH.html'">Go Back to Previous Event</button>
+            <button onclick="confirmBackToMain()">Go Back to Main Page</button>
+            <button onclick="window.location.href='MITING-DE-AVANCE.html'">Proceed to Next Event</button>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Lesson 1a Reflection</title>
+
+<script type="text/javascript">
+
+function pageLoaded() {
+    alert("Welcome to the Lesson 1a Reflection Page!");
+}
+
+function highlightAnswer() {
+    alert("You are reading a reflection answer.");
+}
+
+function showCodeInfo() {
+    document.getElementById("codeInfo").innerHTML =
+    "This example demonstrates CSS properties from Lesson 1a: font-variant, text-shadow, and word-wrap.";
+}
+
+function confirmBack() {
+    var answer = confirm("Do you want to return to the homepage?");
+    if (answer == true) {
+        window.location = "homepage.html";
+    }
+}
+
+</script>
+
+<style>
+
+button {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 12px 20px;
+margin: 8px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+body {
+font-family: MV Boli;
+background-color: #0D7EF8;
+color: #223E9F;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #6DD0FF;
+color: #223E9F;
+text-align: center;
+padding: 20px;
+}
+
+section {
+background-color: #6DD0FF;
+margin: 30px auto;
+padding: 20px;
+width: 80%;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+border-radius: 10px;
+}
+
+h2 {
+color: #004aad;
+}
+
+p {
+text-align: justify;
+line-height: 1.6;
+}
+
+footer {
+background-color: #6DD0FF;
+color: #223E9F;
+text-align: center;
+padding: 10px;
+margin-top: 20px;
+}
+
+.highlight {
+color: #1a75ff;
+font-weight: bold;
+}
+
+.documentation {
+background-color: #aee5ff;
+border-radius: 8px;
+padding: 15px;
+margin-top: 20px;
+}
+
+.code-box {
+background-color: white;
+border-radius: 8px;
+padding: 15px;
+font-family: Courier New;
+}
+
+.output-box {
+background-color: white;
+border-radius: 8px;
+padding: 20px;
+margin-top: 10px;
+}
+
+</style>
+
+</head>
+
+<body onload="pageLoaded()">
+
+<header>
+
+<h1>Lesson 1a: CSS Text Formatting Properties</h1>
+<h3>Reflection and Example</h3>
+
+</header>
+
+<section>
+
+<h2>Reflection</h2>
+
+<p ondblclick="highlightAnswer()">
+In this lesson, I learned about CSS text formatting properties, which control how text appears and behaves on a webpage. These properties are crucial for making content readable, visually appealing, and properly formatted across different devices.  
+
+One key property is <span class="highlight">font-variant</span>, which can transform lowercase letters into smaller uppercase letters using the <span class="highlight">small-caps</span> value. This creates consistent capitalization while maintaining a visual hierarchy.  
+
+Another property, <span class="highlight">text-shadow</span>, allows us to add shadows to text. By adjusting horizontal and vertical offsets, blur, and color, we can make text more visually striking or improve readability against backgrounds.  
+
+Finally, <span class="highlight">word-wrap</span> helps control long words that exceed a container's width. Using <span class="highlight">break-word</span> ensures text stays within its boundaries, preventing layout issues and keeping the design responsive.  
+
+Understanding these properties enhances both the style and functionality of web pages. Applying them thoughtfully allows for professional, readable, and visually attractive text.
+</p>
+
+<div class="documentation">
+
+<h3>Example Code</h3>
+
+<p id="codeInfo" align="center" class="highlight">
+Hover over the code box to see which CSS properties are applied.
+</p>
+
+<div class="code-box" onmouseover="showCodeInfo()">
+
+&lt;style&gt;<br>
+p {<br>
+&nbsp;&nbsp;font-variant: small-caps;<br>
+&nbsp;&nbsp;text-shadow: 2px 2px 3px gray;<br>
+&nbsp;&nbsp;word-wrap: break-word;<br>
+&nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+&nbsp;&nbsp;font-size: 18px;<br>
+&nbsp;&nbsp;color: darkblue;<br>
+}<br>
+&lt;/style&gt;<br><br>
+
+&lt;p&gt;This is a sample text demonstrating CSS font-variant, text-shadow, and word-wrap properties in action. Notice how long words are handled properly within the container.&lt;/p&gt;
+
+</div>
+
+<h3>Browser Output</h3>
+
+<div class="output-box">
+
+<p style="font-variant: small-caps; text-shadow: 2px 2px 3px gray; word-wrap: break-word; font-family: Arial, sans-serif; font-size: 18px; color: darkblue;">
+This is a sample text demonstrating CSS font-variant, text-shadow, and word-wrap properties in action. Notice how long words are handled properly within the container.
+</p>
+
+</div>
+
+</div>
+
+</section>
+<footer>
+<!-- Go back to previous lesson -->
+<button onclick="window.location.href='LESSON 1 - IA.html'">Go Back to Previous Lesson</button>
+
+<!-- Go back to main page -->
+<button onclick="confirmBack()">Go Back to Main Page</button>
+
+<!-- Proceed to next lesson -->
+<button onclick="window.location.href='LESSON 2 - IA.html'">Proceed to Next Lesson</button>
+
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Values Month Reflection</title>
+    <style>
+        body {
+            font-family: MV Boli;
+            background-color: #FDEBD0;
+            color: #B9770E;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #F8C471;
+            color: #7D6608;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #FCF3CF;
+            margin: 30px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #D68910;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #B9770E;
+            font-weight: bold;
+        }
+
+        .documentation {
+            background-color: #F9E79F;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        img,
+        video {
+            width: 220px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            background-color: #F7DC6F;
+            color: #7D6608;
+            border: none;
+            padding: 12px 20px;
+            margin: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #F4D03F;
+        }
+
+        .center-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        #userOutput {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            font-family: Courier New;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function pageLoaded() {
+            alert("Welcome to the Values Month Reflection Page!");
+        }
+
+        function highlightAnswer() {
+            alert("You are reading a reflection answer.");
+        }
+
+        function demoAlert() {
+            alert("Values like honesty, respect, and teamwork guide our daily actions!");
+        }
+
+        function demoPrompt() {
+            let valueLearned = prompt("Which value from the MVP pageant inspired you the most?", "Respect");
+            if (valueLearned !== null) {
+                document.getElementById("userOutput").innerHTML = "You were inspired by: " + valueLearned;
+            } else {
+                document.getElementById("userOutput").innerHTML = "You cancelled the prompt.";
+            }
+        }
+
+        function demoConfirm() {
+            let proceed = confirm("Do you want to see how our section performed in MVP?");
+            document.getElementById("userOutput").innerHTML = proceed ? "Check out the photos and videos below!" : "Maybe next time!";
+        }
+	function confirmBackToMain() {
+    let userConfirmed = confirm("Are you sure you want to go back to the main page?");
+    if (userConfirmed) {
+        window.location.href = 'homepage.html';
+    }
+    // If canceled, do nothing
+}
+    </script>
+</head>
+
+<body onload="pageLoaded()">
+
+    <header>
+        <h1>Values Month Reflection</h1>
+        <h3>MVP Pageant & Section Participation</h3>
+        <p style="font-style: italic;">Third Quarter Event</p>
+    </header>
+
+    <section>
+        <h2>Reflection Questions and Answers</h2>
+
+        <p><strong>1. What is the most important thing I learned from the event?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            I learned that core values like honesty, respect, and teamwork are essential not only in competitions
+            but also in daily interactions.
+        </p>
+
+        <p><strong>2. How can I apply what I learned in real-life situations?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            By practicing these values in school projects, sports, and relationships, I can contribute to a
+            positive and respectful environment.
+        </p>
+
+        <p><strong>3. Did I actively participate in the event? How?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            Yes, I coached our section's representatives, helped them prepare for the MVP pageant, and supported
+            everyone during the activities.
+        </p>
+
+        <p><strong>4. If I were to teach this topic/subject to a classmate, how would I explain it?</strong></p>
+        <p ondblclick="highlightAnswer()">
+            I would explain that practicing values in everyday life makes teamwork and leadership more effective.
+            I would share examples from MVP to illustrate each value.
+        </p>
+
+        <p><strong>5. Why is it important to have an event (per subject)? Explain your answer.</strong></p>
+        <p ondblclick="highlightAnswer()">
+            Events give students opportunities to demonstrate their understanding of values, develop
+            interpersonal skills, and learn in a fun, practical way.
+        </p>
+
+        <div class="documentation">
+            <h3>Event Documentation</h3>
+            <p>
+                Values Month was celebrated with the MVP Pageant where students highlighted key values
+                through presentations, talent showcases, and leadership activities. Our section
+                actively coached our representatives and participated in interbatch competitions
+                emphasizing respect, responsibility, and teamwork.
+            </p>
+
+            <div class="media-container">
+                <img src="V.M. 1.JPG" alt="VPOP Photo 1">
+                <a href="https://drive.google.com/file/d/1tuqyTK-TIYxoPhBXsG6H2g0S4YOe_QTq/view?usp=drive_link" target="_blank"> Watch our VPOP Performance! </a>
+            </div>
+        </div>
+
+   <div class="center-buttons" style="margin-top:20px;">
+           
+            <button onclick="demoAlert()">Event Reminder (Alert)</button>
+           
+          
+        </div>
+
+
+
+
+    </section>
+
+    <footer>
+        <div class="center-buttons">
+            <button onclick="window.location.href='ENGLISH-MONTH.html'">Go Back to Previous Event</button>
+            <button onclick="confirmBackToMain()">Go Back to Main Page</button>
+
+            <button onclick="window.location.href='MATH-MONTH.html'">Proceed to Next Quarter</button>
+        </div>
+    </footer>
+
+</body>
+</html>

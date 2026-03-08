@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Lesson 3a Reflection</title>
+
+<script type="text/javascript">
+
+function pageLoaded() {
+    alert("Welcome to the Lesson 3a Reflection Page!");
+}
+
+function highlightAnswer() {
+    alert("You are reading a reflection answer.");
+}
+
+function showCodeInfo() {
+    document.getElementById("codeInfo").innerHTML =
+    "This example demonstrates CSS layout and styling: box model, positioning, float, background, margins, and borders.";
+}
+
+function confirmBack() {
+    var answer = confirm("Do you want to return to the homepage?");
+    if (answer == true) {
+        window.location = "homepage.html";
+    }
+}
+
+</script>
+
+<style>
+
+button {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 12px 20px;
+margin: 8px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+body {
+font-family: MV Boli;
+background-color: #0D7EF8;
+color: #223E9F;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #6DD0FF;
+color: #223E9F;
+text-align: center;
+padding: 20px;
+}
+
+section {
+background-color: #6DD0FF;
+margin: 30px auto;
+padding: 20px;
+width: 80%;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+border-radius: 10px;
+}
+
+h2 {
+color: #004aad;
+}
+
+p {
+text-align: justify;
+line-height: 1.6;
+}
+
+footer {
+background-color: #6DD0FF;
+color: #223E9F;
+text-align: center;
+padding: 10px;
+margin-top: 20px;
+}
+
+.highlight {
+color: #1a75ff;
+font-weight: bold;
+}
+
+.documentation {
+background-color: #aee5ff;
+border-radius: 8px;
+padding: 15px;
+margin-top: 20px;
+}
+
+.code-box {
+background-color: white;
+border-radius: 8px;
+padding: 15px;
+font-family: Courier New;
+}
+
+.output-box {
+background-color: white;
+border-radius: 8px;
+padding: 20px;
+margin-top: 10px;
+}
+
+.box {
+background-color: #ffe599;
+padding: 20px;
+margin: 20px;
+border: 2px solid #999;
+}
+
+.floated {
+float: left;
+width: 150px;
+margin-right: 20px;
+background-color: #d9ead3;
+padding: 10px;
+text-align: center;
+border: 2px solid #999;
+}
+
+</style>
+
+</head>
+
+<body onload="pageLoaded()">
+
+<header>
+
+<h1>Lesson 3a: CSS Layout and Styling</h1>
+<h3>Reflection and Example</h3>
+
+</header>
+
+<section>
+
+<h2>Reflection</h2>
+
+<p ondblclick="highlightAnswer()">
+This lesson emphasized the fundamentals of CSS layout and styling, focusing on the <span class="highlight">Box Model</span>, <span class="highlight">Positioning</span>, <span class="highlight">Float</span>, <span class="highlight">Background</span>, <span class="highlight">Margins</span>, and <span class="highlight">Borders</span>.  
+I learned that every HTML element is represented as a rectangular box with <span class="highlight">content, padding, border,</span> and <span class="highlight">margin</span>, and controlling these components is essential for proper spacing and sizing.  
+
+Using <span class="highlight">position</span> and <span class="highlight">offsets</span> enables precise placement of elements, while <span class="highlight">float</span> helps wrap text around other elements.  
+<Span class="highlight">Background</span> properties allow visual enhancement with colors and images, and <span class="highlight">borders</span> help define and separate content.  
+Mastering these properties helps me create visually appealing, organized, and responsive web pages.
+</p>
+
+<div class="documentation">
+
+<h3>Example Code</h3>
+
+<p id="codeInfo" align="center" class="highlight">
+Hover over the code box to see which CSS properties are applied.
+</p>
+
+<div class="code-box" onmouseover="showCodeInfo()">
+
+&lt;style&gt;<br>
+.container {<br>
+&nbsp;&nbsp;width: 400px;<br>
+&nbsp;&nbsp;padding: 20px;<br>
+&nbsp;&nbsp.margin: 20px;<br>
+&nbsp;&nbsp.border: 2px solid #000;<br>
+&nbsp;&nbsp.background-color: #f9cb9c;<br>
+}<br>
+.floated {<br>
+&nbsp;&nbsp;float: right;<br>
+&nbsp;&nbsp;width: 120px;<br>
+&nbsp;&nbsp;padding: 10px;<br>
+&nbsp;&nbsp;margin: 10px;<br>
+&nbsp;&nbsp;background-color: #cfe2f3;<br>
+&nbsp;&nbsp;border: 2px solid #999;<br>
+&nbsp;&nbsp;text-align: center;<br>
+}<br>
+&lt;/style&gt;<br><br>
+
+&lt;div class="floated"&gt;Floated Box&lt;/div&gt;<br>
+&lt;div class="container"&gt;This container demonstrates the CSS Box Model, float, margin, padding, border, and background styling. Text wraps around the floated box.&lt;/div&gt;
+
+</div>
+
+<h3>Browser Output</h3>
+
+<div class="output-box">
+
+<div class="floated">Floated Box</div>
+<div class="container">This container demonstrates the CSS Box Model, float, margin, padding, border, and background styling. Text wraps around the floated box.</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<button onclick="window.location.href='LESSON 3 - IA.html'">Go Back to Previous Lesson</button>
+<button onclick="confirmBack()">Go Back to Main Page</button>
+<button onclick="window.location.href='LESSON 4 - IA.html'">Proceed to Next Lesson</button>
+
+</footer>
+
+</body>
+
+</html>
